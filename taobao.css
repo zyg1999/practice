@@ -1,0 +1,176 @@
+*{
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+.warpper{
+	width: 100%;
+	height: 100%;
+}
+
+.warpper .top-warpper{
+	width: 100%;
+	height: 35px;
+    background-color: #f5f5f5;
+    border: 1px solid #eee;
+}
+.warpper .top-warpper .top-header{
+	width: 1190px;
+	height: 35px;
+	margin:0px auto;
+    
+}
+.warpper .top-warpper .top-header .top-header-left{
+	float:left;
+}
+.warpper .top-warpper .top-header .top-header-right{
+	float: right;
+}
+.warpper .top-warpper .top-header li{
+	float:left;
+	margin-right: 9px;
+}
+.warpper .top-warpper .top-header li a{
+	color:#6c6c6c;
+	line-height:35px; 
+    font-size:12px;
+    
+}
+.warpper .top-warpper .top-header li a:hover{
+  color: #f40;
+}
+.warpper .top-warpper .top-header .china{
+	color: #3C3C3C;
+	font-size: 12px;
+	line-height: 35px;
+}
+ .top-header .top-header-left .top-header-left-nav .login{
+ 	color:#f40;
+ }
+ .top-header-right .cutoff{
+ 	
+    color: #ddd;
+    line-height: 35px;
+ }
+.warpper .top-warpper .top-header .superscript{
+	display:inline-block;
+	width: 22px;
+	height:22px;
+	vertical-align: middle;
+	background-size: 100% 100%;
+	
+}
+.warpper .top-warpper .top-header .sj{
+	width: 18px;
+	height:22px;
+	line-height: 22px;
+	background-image: url(淘宝/img/xsj.png);
+	/*background-size: 20px 20px;*/
+	
+}
+.warpper .top-warpper .top-header .car{
+	background-image: url(淘宝/img/gwc.png);
+	width: 19px;
+	height:19px;
+
+}
+.warpper .top-warpper .top-header .star{
+	background-image: url(淘宝/img/xx.png);
+	width: 19px;
+	height:19px;
+}
+.warpper .top-warpper .top-header .sh{
+	background-image: url(淘宝/img/daohang.png);
+	width: 19px;
+	height:19px;
+}
+
+/*导航*/
+.warpper .search-warp{
+	width: 100%;
+	height:97px;
+	background-color:#fff;
+	padding-top: 24px;
+	padding-bottom: 9px;
+}
+.search-content{
+	width: 1190px;
+	height: 88px;
+	border: 1px solid black;
+	margin: 0 auto;
+    
+}
+
+.search-warp .search-content .tbwlogo a{
+  display: inline-block;
+  color: #f40;
+  width:142px;
+  height: 0px;
+  padding-top: 58px;
+  margin-left: 22px;
+  overflow: hidden;
+  background-image: url(https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png);
+  background-size: 142px 58px;
+}
+.search-warp .search-content .tbwlogo{	
+    display: inline-block;
+	vertical-align: middle;
+}
+.search-warp .search-content .searchpart{
+	width: 627px;
+	height: 97px;
+	border: 1px solid black;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 40px;
+}
+
+.search-warp .search-content .searchpart .search-hd{
+    width: 627px;
+	height: 62px;
+    border: 1px solid black;
+}
+.searchpart .search-hd li{
+	float:left;
+	width:36px;
+	height: 22px;
+	text-align: center;
+	line-height: 22px;
+    color: #f40;
+    margin-right: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.searchpart .search-hd li:hover{
+	color: #ff5400;
+	background-color:#FFEEE5;
+}
+
+.searchpart .search-hd .search-type{
+	width:610px;
+	height:20px;
+	/*border: 1px solid black;*/
+	margin-left: 17px;
+}
+.searchpart .search-hd .search-type .select{
+	background:linear-gradient(to right,#ff9000 0,#ff5000 100%); 
+    color: #fff;
+    font-weight: 700;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.search-warp .search-content .searchpart .search-ft{
+	width:586px;
+	height:18px;
+	border: 1px solid black;
+}
+/*.search-content .erweima{
+    width: 76px;
+	height: 90px;
+	border: 1px solid black;
+	display: inline-block;
+	vertical-align: middle;
+	
+}*/
