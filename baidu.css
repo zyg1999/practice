@@ -1,0 +1,149 @@
+* {
+	padding:0px;
+	margin:0px;
+}
+
+/*Navigation Bar*/
+.head{
+	height: 60px;
+	line-height: 60px;	
+}
+
+.head .nav {
+	list-style:none;
+}
+
+.head .nav::after{
+  content: "";
+  display: block;
+  clear:both;
+}
+.head .nav li{
+	float:right;
+	margin-right: 20px;
+}
+.head .nav li a{
+	color:#333;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.item a:hover{
+color :blue;
+}
+
+.head .nav .u1 a{
+font-weight: 100;
+}
+
+.head .nav .more{
+	margin-right: 12px;
+}
+
+.head .nav .more a{
+	background-color:#38f;
+	text-decoration: none;
+	font-weight: 400;
+	color:#fff;
+    padding:4px;
+}
+.head .nav li a:hover{
+	color:#00c;
+}
+
+/*search*/
+.search{
+	margin-top: 40px;
+}
+
+.search .logo{
+	text-align: center;
+}
+.search .logo img{
+	width: 270px;
+	height: 129px;	
+}
+.search .searchfm{
+	margin:20px;
+	text-align: center;
+
+}
+.search .searchfm form div{
+	display:inline-block;
+}
+.search .searchfm form .wrapper {
+	position: relative;
+}
+.search .searchfm form .wrapper input{
+	width: 539px;
+	height: 34px;
+	border:1px solid #b6b6b6;
+}
+.search .searchfm form .wrapper span{
+	position: absolute;
+	right:10px;
+	top:50%;
+	margin-top:-8px;
+	width:18px;
+	height: 16px;
+	background-position: 0px 0px;
+	background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png);
+}
+.search .searchfm form .wrapper span:hover
+{
+	background-position:0px 18px;
+	cursor: pointer;
+}
+.search .searchfm .swrapper input{
+	width:100px;
+	height: 34px;
+	background-color:#3385ff;
+	color:#fff;
+	font-size: 15px;
+	cursor: pointer;
+	border:none;
+}
+.search .searchfm .wrapper{
+	vertical-align: top;
+}
+.search .searchfm .swrapper{
+	margin-left: -5px;
+}
+
+/*information*/
+.information{
+	margin-top: 280px;
+	text-align: center;
+}
+.information .wechat p{
+	color:#666;
+	font:12px arial;
+	font-weight: 700;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+.information .message .mes1 a{
+	color:#999;
+	font:12px arial;
+	margin-right: 10px;
+}
+.information .message .mes2 a,span{
+	color:#999;
+	font:12px arial;
+	
+}
+.information .message .mes2 .ps1 img{
+	width: 18px;
+    height: 23px; 
+    display: inline-block;
+    margin: 3px 15px -3px 0;
+    vertical-align: bottom;
+}
+.information .message .mes2 .ps2 img{
+	width: 18px;
+    height: 23px; 
+    display: inline-block;
+    margin-left: -3px;
+    margin-top: 3px;
+    vertical-align: bottom;
+}
