@@ -66,7 +66,7 @@
 	height:22px;
 	line-height: 22px;
 	background-image: url(淘宝/img/xsj.png);
-	/*background-size: 20px 20px;*/
+	
 	
 }
 .warpper .top-warpper .top-header .car{
@@ -85,24 +85,22 @@
 	width: 19px;
 	height:19px;
 }
+/*leading*/
 
-/*导航*/
 .warpper .search-warp{
 	width: 100%;
 	height:97px;
 	background-color:#fff;
 	padding-top: 24px;
-	padding-bottom: 9px;
 }
 .search-content{
 	width: 1190px;
 	height: 88px;
-	border: 1px solid black;
 	margin: 0 auto;
     
 }
 
-.search-warp .search-content .tbwlogo a{
+.search-warp .search-content .logobox a{
   display: inline-block;
   color: #f40;
   width:142px;
@@ -113,25 +111,24 @@
   background-image: url(https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png);
   background-size: 142px 58px;
 }
-.search-warp .search-content .tbwlogo{	
+.search-warp .search-content .logobox{	
     display: inline-block;
 	vertical-align: middle;
+	margin-right: 20px;
 }
-.search-warp .search-content .searchpart{
+.search-warp .search-content .searchbox{
 	width: 627px;
 	height: 97px;
-	border: 1px solid black;
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: 40px;
+	margin-left: 53px;
 }
 
-.search-warp .search-content .searchpart .search-hd{
+.search-warp .search-content .searchbox .search-hd{
     width: 627px;
 	height: 62px;
-    border: 1px solid black;
 }
-.searchpart .search-hd li{
+.searchbox .search-hd li{
 	float:left;
 	width:36px;
 	height: 22px;
@@ -142,18 +139,17 @@
     cursor: pointer;
     font-size: 12px;
 }
-.searchpart .search-hd li:hover{
+.searchbox .search-hd li:hover{
 	color: #ff5400;
 	background-color:#FFEEE5;
 }
 
-.searchpart .search-hd .search-type{
+.searchbox .search-hd .search-type{
 	width:610px;
 	height:20px;
-	/*border: 1px solid black;*/
 	margin-left: 17px;
 }
-.searchpart .search-hd .search-type .select{
+.searchbox .search-hd .search-type .select{
 	background:linear-gradient(to right,#ff9000 0,#ff5000 100%); 
     color: #fff;
     font-weight: 700;
@@ -161,16 +157,495 @@
     border-top-left-radius: 6px;
 }
 
-.search-warp .search-content .searchpart .search-ft{
-	width:586px;
-	height:18px;
-	border: 1px solid black;
+.searchbox .search-hd .searchinput .logo-fdj{
+	width: 16px;
+	height: 20px;
+	background: url(淘宝/img/fdj.png)no-repeat;
+	position:absolute;
+	background-size: 100% 100%;
+	margin-top: 2px;
+	display: inline-block;
+	top: 6px;
+	left: 12px;
 }
-/*.search-content .erweima{
+
+
+.searchbox .search-hd .searchinput{
+	width: 627px;
+	height: 40px;
+	position: relative;
+
+}
+.searchbox .search-hd .searchinput .but{
+	position: absolute;
+	right:0px;
+	top: 0px;
+	width: 74px;
+	height: 40px;
+	z-index: 1000;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	overflow: hidden;
+
+}
+.searchbox .search-hd .searchinput .but button{
+	border:none;
+	background:linear-gradient(to right,#ff9000 0,#ff5000 100%);
+	width: 100%;
+	height: 100%;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	cursor: pointer;
+	color:#fff;
+	font-size: 17px;
+	font-weight:600; 
+}
+
+.searchbox .search-hd .searchinput .search-input-box{
+	width: 551px;
+	height: 36px;
+	border:2px solid #ff5000;
+	border-top-left-radius:20px;
+	border-bottom-left-radius:20px;
+	position: relative;
+	border-right: none;
+}
+.searchbox .search-hd .searchinput .search-input-box .input {
+	    width: 454px;
+	    height: 36px;
+	    margin-left: 28px;
+        display: inline-block;
+      
+}
+.searchbox .search-hd .searchinput .search-input-box .input input{
+    width:454px;
+    height: 22px;
+    line-height: 24px;
+	border:0;
+	border-bottom-color: #ff5000;
+	outline: 0;
+    padding: 6px 0;
+ 
+ }
+ .searchbox .search-hd .searchinput .camera{
+	width: 24px;
+	height: 30px;
+	background:url(淘宝/img/xj.png)no-repeat;
+	position:absolute;
+	display: inline-block;
+	background-size: 100% 100%;
+    right: 10px;
+    top:2px;
+}
+
+.search-warp .search-content .searchbox .search-ft{
+	width:627px;
+	height:25px;
+}
+.search-warp .search-content .searchbox .search-ft a{
+	font-size: 12px;
+	margin-right: 4px;
+    color: #666;
+}
+.search-warp .search-content .searchbox .search-ft a:hover{
+	color:#ff5000;
+}
+.search-content .erweima{
     width: 76px;
-	height: 90px;
-	border: 1px solid black;
+	height: 88px;
+	border: 1px solid #eee;
+	cursor: pointer;
 	display: inline-block;
 	vertical-align: middle;
+	margin-left: 118px;
+}
+.search-content .erweima span{
+	line-height: 20px;
+    margin: 4px 12px 0;
+    width: 78px;
+    cursor: pointer;
+    font-size: 12px;
+    color:#ff5000;
+}
+.search-content .erweima img{
+   width:62px;
+   height: 62px;
+   margin:0 6px;
+}
+/*searchpart*/
+
+
+
+.screen-nav{
+	height:30px;
+	color: #fff;
+	background-image: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+}
+.screen-nav .screen-nav-box{
+	 width: 1190px;
+	 margin:0 auto;
+}
+.screen-nav h2{
+	float: left;
+    width: 190px;
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    background: #ff5000;
+}
+.screen-nav .front{
+    float: left;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.screen-nav .front a{
+   padding: 0 5px;
+   color:#fff;
+   margin: auto 5px;
+   
+}
+.screen-nav .middle{
+	float: left;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.screen-nav .middle a{
+	color:#fff;
+	padding: 0 5px;
+    margin-left:7px;
+}
+.screen-nav .later{
+	float: left;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 700;
+ }   
+.screen-nav .later a{
+	color:#fff;
+	padding: 0 5px;
+    margin-left:7px;
+}
+/*lead*/
+
+.screen-out{
+	width: 1190px;
+    margin: 0 auto;
+    height: 632px;
+    border:1px solid black;
+    position: relative;
+}
+.screen-out .screen-out-left{
+	width: 900px;
+	height: 632px;
+	position: absolute;
+	/*border: 1px solid black;*/
+}
+.screen-out .left{
+   width: 188px;
+   height: 521px!important;
+   border:1px solid #ff5000;
+   position: relative;
+   overflow: hidden;
+   background-color: #fff;
+}
+.screen-out .left li{
+	width: 158px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	padding-left: 25px;
+    padding-right: 19px;
+    position: relative;
+
+}
+.screen-out .left ul li a{
+	color: #666;
+}
+
+.screen-out .left ul li:hover{
+	background-color: #FFEEE5;
+	color:#ff5000;
+}
+.screen-out .left  li a:hover{
+	text-decoration: underline;
+	color:#ff5000;
+}
+.screen-out .left .jkh{
+    position: absolute;
+    right: 20px;
+    font-size: 12px;
+    color: #666;
+}
+.screen-out .middle{
+	display: block;
+	width: 520px;
+	height: 512px;
+	position: absolute;
+	top:10px;
+	left:199px;
+
+}
+.middle .middle-left{
+	position: absolute;
+	background-color: #fff;
+}
+.middle-left .middle-left-top img{
+	width: 520px;
+	height: 280px;
+}
+
+.middle .middle-left span{
+	width:139px;
+	height: 19px;
+	background-image: url(淘宝/img/tm.png);
+	background-size: 100% 100%;
+	position:absolute;
+	top:5px;
+}
+.middle .middle-left a{
+    font-size: 12px;
+    color: #666;
+    position: absolute;
+    margin-left: 149px;
+    margin-top: 11px;
+    text-decoration: none;
+}
+.middle .middle-left .point{
+	position: absolute;
+	right:0;
+	font-size: 12px;
+}
+.middle-left .middle-left-bottom{
+	width: 520px;
+	height: 200px;
+    background-image: url(淘宝/img/lb.png);
+    background-size: 100% 100%;
+}
+.screen-out-left .right{
+	width:160px;
+	height:512px;
+	position: absolute;
+	top:10px;
+	right:10px;
+}
+.screen-out-left .right p{
+	font-size: 12px;
+    font-weight: 400;
+    background: #f1f1f1;
+    color: #a1a1a1;
+    line-height: 24px;
+    padding-top: 6px;
+}
+.screen-out-left .bottom{
+	width: 890px;
+	height: 100px;
+	position: absolute;
+	bottom: 0px;
+	background-color:#fff;
+}
+.screen-out-left .bottom .headlines-img{
+	width: 180px;
+	height: 73px;
+	position: absolute;
+	left: 10px;
+	top: 11px;
+	background: url(https://img.alicdn.com/tfs/TB1KbhkbUgQMeJjy0FeXXXOEVXa-129-26.png)0 14px no-repeat;;
+}
+.screen-out-left .bottom .headlines-img p{
+	width: 180px;
+	height: 24px;
+	color: #999;
+	line-height:24px;
+	margin-top:42px;
+	font-size: 12px;
+}
+
+.screen-out-left .bottom .headlines{
+	width: 676px;
+	height: 73px;
+	position:absolute;
+	right:10px;
+	top:11px;
+}
+.screen-out-left .bottom .headlines p{
+	display: inline-block;
+	position: absolute;
+	top:38px;
+	left:144px;
+	color: #999;
+	font-size: 14px;
+}
+.screen-out-left .bottom .headlines h4{
+	color: #333;
+	display: inline;
+	position: absolute;
+	top: 10px;
+	font-size: 16px;
+    font-weight: 500;
+    left:144px;
+}
+.screen-out-left .bottom .headlines h4:hover{
+	cursor: pointer;
+	color:#ff5000!important;
+}
+.screen-out-left .bottom a{
+	text-align: right;
+	position: absolute;
+    top: 14px;
+    right: 16px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #999;
+}
+.screen-out-left .bottom a:hover{
+	cursor: pointer;
+	color:#ff5000;
+}
+.screen-out-right{
+ 	width:290px;
+ 	height:632px;
+ 	border:1px solid black;
+ 	position: relative;
+ 	top:10px;
+ 	float: right;
+}
+.screen-out-right .login{
+	width: 290px;
+	height: 145px;
+	/*border:1px solid black;*/
+	background-image: url(淘宝/img/bj.jpg);
+	background-size: 100% 100%;
+}
+.screen-out-right .login .coin{
+	width:102px;
+	height:16.8px;
+	background-color: #ffe4db;
+	position: relative;
+	border:0px solid #ffe4db;
+	border-radius: 9px;
+	left:52px;
+}
+.screen-out-right .login .member{
+	width:102px;
+	height:16.8px;
+	background-color: #ffe4db;
+	position: relative;
+	border:0px solid #ffe4db;
+	border-radius: 9px;
+	left:157px;
+	top:-17px;
+}
+.screen-out-right .login .member a{
+	display: inline-block;
+	background-image: url(淘宝/img/pic.png);
+	background-position: 0 -528px;
+	width: 16px;
+	height: 15px;
+}
+.screen-out-right .login .login-type{
+	width:290px;
+	height:40px;
 	
-}*/
+}
+.screen-out-right .login .login-type a{
+	background:linear-gradient(to right,#ff5000 0,#ff6f06 100%);
+	font-size: 14px;
+	border-radius: 4px;
+	font-weight: 700;
+	width:75px;
+	height:24.8px;
+	color: #fff;
+	margin-right: 7px;
+    text-align: center;
+    line-height: 25px;
+    float: left;
+    margin-top:10px;
+}
+.screen-out-right .report{
+	width:208px;
+	height: 26px;
+	background-color: #ffe4db;
+	color: #f40;
+	padding-left: 82px;
+	overflow: hidden;
+	line-height: 26px;
+	font-size: 12px;
+}
+.screen-out-right  .notice {
+    width: 290px;
+    height: 108px;
+    background-color: #fff;
+    position: absolute;
+}
+.screen-out-right  .notice .notice-hd{
+	width:292px;
+	height:24px;
+	text-align: center;
+    margin-top: 10px;
+}
+.screen-out-right  .notice .notice-hd a{
+	width: 32px;
+	height: 22px;
+	color:#3C3C3C;
+	font-size: 12px;
+	margin:0 11px;
+}
+.screen-out-right  .notice .notice-hd .select{
+	font-weight: 700;
+    border-bottom: 2px solid #F40;
+    margin-left: 10px;
+}
+.screen-out-right  .notice .notice-hd a:hover{
+    color: #f40;
+    border-bottom: 2px solid #F40;
+}
+.screen-out-right  .notice .more{
+	font-size: 12px;
+	width:260px;
+	height:25px;
+	line-height: 25px;
+	text-align: center;
+}
+.screen-out-right  .notice .more a{
+    text-decoration: none;
+    color:black;
+}
+.screen-out-right  .notice .more a:hover{
+	color: #f40;
+}
+.screen-out-right .list-item{
+	width:290px;
+	height:232px;
+	border:1px solid black;
+	position: absolute;
+	top:282px;
+	
+}
+.screen-out-right .list-item span{
+	width: 70px;
+	height: 76px;
+	border:1px solid black;
+	background-color: #fff;
+	float:left;
+	position: relative;
+}
+.screen-out-right .list-item img{
+	width: 24px;
+	height: 24px;
+	border:1px solid black;
+	position: absolute;
+	background-image: url(淘宝/img/pic.png);
+	top:12px;
+	left:18px;
+}
+.screen-out-right .list-item a{
+	font-size: 12px;
+	color: black;
+	position: absolute;
+	
+}
