@@ -27,7 +27,11 @@
 .warpper .top-warpper .top-header .top-header-right{
 	float: right;
 }
-.warpper .top-warpper .top-header li{
+.warpper .top-warpper .top-header ul.top-header-left>li{
+	float:left;
+	margin-right: 9px;
+}
+.warpper .top-warpper .top-header ul.top-header-right>li{
 	float:left;
 	margin-right: 9px;
 }
@@ -44,6 +48,31 @@
 	color: #3C3C3C;
 	font-size: 12px;
 	line-height: 35px;
+	position: relative;
+}
+.top-header .top-header-left .china:hover .down-menu{
+	display: block;
+}
+.top-header .top-header-left .china:hover{
+	background-color: #fff;
+	border-left: 2px solid #eee;
+}
+.top-header .top-header-left .top-header-left-nav .down-menu{
+	width: 260px;
+	height: 280px;
+	font-size: 12px;
+	background-color: #fff;
+	line-height: 30px;
+	position: absolute;
+	z-index: 2;
+	overflow-y:scroll;
+	overflow-x:hidden; 
+	display: none;
+	border-left: 1px solid #eee;
+}
+.top-header .top-header-left .top-header-left-nav .down-menu li{
+	margin-left: 6px;
+	
 }
  .top-header .top-header-left .top-header-left-nav .login{
  	color:#f40;
@@ -335,14 +364,12 @@
 	width: 1190px;
     margin: 0 auto;
     height: 632px;
-    border:1px solid black;
     position: relative;
 }
 .screen-out .screen-out-left{
 	width: 900px;
 	height: 632px;
 	position: absolute;
-	/*border: 1px solid black;*/
 }
 .screen-out .left{
    width: 188px;
@@ -396,6 +423,7 @@
 .middle-left .middle-left-top img{
 	width: 520px;
 	height: 280px;
+	cursor: pointer;
 }
 
 .middle .middle-left span{
@@ -404,7 +432,7 @@
 	background-image: url(淘宝/img/tm.png);
 	background-size: 100% 100%;
 	position:absolute;
-	top:5px;
+	top:8px;
 }
 .middle .middle-left a{
     font-size: 12px;
@@ -424,6 +452,7 @@
 	height: 200px;
     background-image: url(淘宝/img/lb.png);
     background-size: 100% 100%;
+    cursor: pointer;
 }
 .screen-out-left .right{
 	width:160px;
@@ -431,6 +460,7 @@
 	position: absolute;
 	top:10px;
 	right:10px;
+	cursor: pointer;
 }
 .screen-out-left .right p{
 	font-size: 12px;
@@ -506,10 +536,12 @@
 	cursor: pointer;
 	color:#ff5000;
 }
+.screen-out-left .bottom .headlines img:hover{
+	cursor: pointer;
+}
 .screen-out-right{
  	width:290px;
- 	height:632px;
- 	border:1px solid black;
+ 	height:621px;
  	position: relative;
  	top:10px;
  	float: right;
@@ -517,7 +549,6 @@
 .screen-out-right .login{
 	width: 290px;
 	height: 145px;
-	/*border:1px solid black;*/
 	background-image: url(淘宝/img/bj.jpg);
 	background-size: 100% 100%;
 }
@@ -604,6 +635,7 @@
     color: #f40;
     border-bottom: 2px solid #F40;
 }
+
 .screen-out-right  .notice .more{
 	font-size: 12px;
 	width:260px;
@@ -621,7 +653,6 @@
 .screen-out-right .list-item{
 	width:290px;
 	height:232px;
-	border:1px solid black;
 	position: absolute;
 	top:282px;
 	
@@ -629,7 +660,7 @@
 .screen-out-right .list-item span{
 	width: 70px;
 	height: 76px;
-	border:1px solid black;
+    border:1px solid #f4f4f4;
 	background-color: #fff;
 	float:left;
 	position: relative;
@@ -637,15 +668,94 @@
 .screen-out-right .list-item img{
 	width: 24px;
 	height: 24px;
-	border:1px solid black;
 	position: absolute;
 	background-image: url(淘宝/img/pic.png);
 	top:12px;
-	left:18px;
+	left:20px;
+	border：0;
 }
 .screen-out-right .list-item a{
 	font-size: 12px;
 	color: black;
+	position: absolute;	
+}
+.screen-out-right .list-item a:hover{
+	color: #ff5000;
+}
+.screen-out-right .app-hd{
+	width: 290px;
+	height: 108px;
 	position: absolute;
-	
+	bottom: 0px;
+	background-color:#fff;
+}
+.screen-out-right .app-hd h3{
+	font-size: 14px;
+    padding-left: 14px;
+    height: 30px;
+    line-height: 30px;
+    z-index: 2;
+    display: inline-block;
+}
+.screen-out-right .app-hd a{
+	position: absolute;
+	right: 10px;
+	font-size: 12px;
+	font-weight: 400;
+	color: #3c3c3c;
+	height: 30px;
+	line-height: 30px;
+}
+.screen-out-right .app-hd a:hover{
+	color:#ff5000;
+}
+.screen-out-right .app-hd .APP{
+	width:290px;
+	height:82px;
+    position: relative;
+    top:2px;
+}
+.screen-out-right .app-hd .APP a{
+	width:30px;
+	height:30px;
+	float: left;
+	display: block;
+	position: relative;
+	margin-left: 25px;
+    margin-bottom: 8px;
+    background-size: 100% 100%;
+}
+.fixed{
+	width:50px;
+	height:350px;
+	background-color: #fff;
+	position: fixed;
+	top:50%;
+	right:100px;
+	border-radius: 8px;
+}
+.fixed span{
+	width: 50px;
+	height: 26px;
+	background-image: url(淘宝/img/baba.png);
+	background-size: 100% 100%;
+	position: absolute;
+	top:-27px;
+}
+.fixed a{
+	width: 34px;
+	height: 44px;
+	z-index: 2;
+	text-align: center;
+	position: relative;
+	display: block;
+    text-decoration: none;
+    padding: 6px 8px 0;
+	line-height: 17px;
+    font-size: 13px;
+    color: #3c3c3c;
+}
+.fixed a:hover{
+	color:#fff!important;
+	background:linear-gradient(135deg,#ff971b,#ff5000);
 }
