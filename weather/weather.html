@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="weather.css">
+    <title>天气助手</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="theme">
+                天气助手
+            </div>
+            <div class="searchbox">
+                <input type="text" id="searchinput" value="搜索城市" onfocus='if(this.value=="搜索城市"){this.value="";}; ' onblur='if(this.value==""){this.value="搜索城市";};'>
+            </div>
+
+        </div>
+        <div class="weatherbox">
+            <div class="todayweatherbox">
+
+                <div class="todayweather">
+                    <span class="point"></span>
+                    <div id="city"></div>
+                    <div id="updatetime"></div>
+                    <div class="mainweather">
+                        <p id="temperature"></p>
+                        <p id="weathercategory"></p>
+                        <div class="weatherpic"></div>
+                    </div>
+                    <div class="other">
+                        <p class="winds">
+                            <span class="windspic"></span>
+                            <span id="windcontent"></span>
+                        </p>
+                        <p class="humidity">
+                            <span class="humiditypic"></span>
+                            <span id="humiditycontent"></span>
+                        </p>
+                        <p class="pressure">
+                            <span class="pressurepic"></span>
+                            <span id="pressurecontent"></span>
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="hoursweather">
+
+            </div>
+            <div class="sevendays">
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="weather.js"></script>
+</body>
+
+</html>

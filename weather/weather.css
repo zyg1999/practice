@@ -1,0 +1,219 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+    .wrapper{
+        width: 100%;
+        
+    }
+    .header{
+        width: 100%;
+        height: 15%;
+        border-bottom: 1px solid rgba(247, 245, 245, 0.842);
+        overflow: hidden;
+        background-color: rgb(0,151,220);
+    }
+    .theme{
+        font-size: 2em;
+        float: left;
+        margin-left: 10%;
+    }
+    .searchbox{
+        float: right;
+        margin-right: 16%;
+        border-radius: 1em;
+        margin-top: 0.35%;
+        width: 15%;
+        background-color: rgba(255, 255, 255, 0.53);
+    }
+    #searchinput{
+        width: 90%;
+        height:16px;
+        padding: 0.8% 2.2%;
+        margin: 2.5% 2.2%;
+        outline: 0;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(255,255,255,.7);
+        font-size: 14px;
+    }
+    .todayweatherbox{
+        width: 100%;
+        height: 600px;
+        background-image: url(bg.jpg);
+        background-size: 100% 100%;
+    }
+    .todayweather{
+        /* width: 44%; */
+        height: 450px;
+        margin-left: 10%;
+        padding-top: 3%;
+        padding-left: 3%;
+        color:white;
+       
+    }
+    .point{ 
+        height: 35px;
+        width: 3%;
+        background-image: url(位置.png);
+        background-size: 100% 100%;
+        display: inline-block;
+    }
+    #city{
+        font-size: 2em;
+        display: inline;
+    }
+    #updatetime{
+        width: 36%;
+        height: 16px;
+        opacity: 0.85;
+        font-size: 1em;
+        padding-top: 2%;
+    }
+    .mainweather{
+        width: 45%;
+        height: 95px;
+        margin-top: 3%;
+        display: inline;
+    }
+    #temperature{
+        font-size: 4em;
+        display: inline;
+    }
+    #weathercategory{
+        font-size: 1.7em;
+        display: inline;
+        margin-left: 12%;
+    }
+    .other{
+        height: 16px;
+        padding-top: 5%;
+        font-size: 1.25em;
+    }
+    .winds{
+        width: 20%;  
+        display: inline-block; 
+    }
+    .windspic{
+        background-image: url(风车.png);
+        height: 35px;
+        width: 25%;
+        background-size: 100% 100%;
+        display: inline-block;
+    }
+   
+    .humidity{
+        width: 20%;
+        display: inline-block;
+    }
+    .humiditypic{
+        background-image: url(湿度.png);
+        height: 35px;
+        width: 25%;
+        background-size: 100% 100%;
+        display: inline-block;
+    }
+    .pressure{
+        width: 20%;
+        display: inline-block;
+    }
+    .pressurepic{
+        background-image: url(大气压力.png);
+        height: 35px;
+        width: 25%;
+        background-size: 100% 100%;
+        display: inline-block;
+    }
+    .weatherpic{
+        width: 16%;
+        height:78px;
+        background-image: url(晴.png);
+        background-size: 100% 100%;
+        margin-left: 10%;
+        display: inline-block;
+    }
+@media screen and (max-width: 940px){
+   .other{
+            font-size: 1em; 
+   }
+   .searchbox {
+    margin-right: 10%;
+    border-radius: 1em;
+    margin-top: 0.85%;
+    width: 25%;
+   }
+   #updatetime {
+    font-size: 0.8em;
+   }
+   .weatherpic{
+    width: 20%;
+  }
+  .winds{
+      width:25%;
+  }
+  .humidity{
+    width: 25%;
+  }
+  .pressure{
+        width: 25%;
+  }
+}
+@media screen and (max-width: 610px){
+    .wrapper{
+        min-width: 350px;
+    }
+    .theme {
+        font-size: 1.8em;
+    }
+    #updatetime{
+        width: 100%;
+    }
+    .other{
+        font-size: 1.2em;
+        margin-left: 5%; 
+    }
+    .winds{
+        display: block;
+        width: 80%;   
+    }
+    .humidity{
+        display: block;
+        width: 80%;
+        margin-top: 4%;
+    }
+    .pressure{
+        display: block;
+        width: 80%;
+        margin-top: 4%;
+    }
+    .windspic {
+        width: 19%;
+        
+    }
+    .humiditypic{
+        width: 19%;
+    }
+    .pressurepic{
+        width: 19%;   
+    }
+    .weatherpic{
+        margin-left: 5%;
+        opacity: 0;
+    }
+    #temperature {
+        font-size: 3.5em;
+    }
+    #weathercategory {
+        font-size: 1.5em;
+        margin-left: 8%;
+    }
+    .searchbox {
+        border-radius: 1em;
+        margin-top: 1.5%;
+        width: 38%;
+    }
+    .point{ 
+        width: 10%;
+    }
+}
