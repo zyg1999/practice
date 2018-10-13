@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+</head>
+<body>
+    <form id="myfrom" onsubmit="return false;">
+       用户：<input type="text" id="user" name="user" ><br>
+       密码：<input type="password" id="pass" name="pass"><br>
+       <input type="button"  value="注册" id="regbnt">
+       <input type="button"  value="登录" id="loginbnt">
+    </form>
+    <script>
+        
+
+       var regBnt = document.getElementById('regbnt');
+       var subBnt = document.getElementById('loginbnt');
+       
+       function register(){
+        const name =document.getElementById('user');
+        const pass = document.getElementById('pass');
+            var xhr = new XMLHttpRequest();
+            xhr.open('get', "http://localhost:8080/user?act=reg&user="+name.value+"&pass="+pass.value, false);
+            xhr.onreadystatechange = function(e) { 
+                if(xhr.readyState==4){
+                    if((this.status >= 200 && this.status < 300) || this.status == 304){
+                    //alert(this.responseText);
+                    var json= JSON.parse(this.responseText);
+                    console.log(json);
+                    if(json.ok){
+                        alert("注册成功");
+                    }else{
+                   alert('注册失败:'+json.msg);
+                  }
+                }else{
+                    alert("通信错误！");
+                }
+            };
+        }
+            xhr.send(null);
+        }
+        regBnt.onclick = function(){
+            register();
+        }  
+        function login(){
+            const name =document.getElementById('user');
+            const pass = document.getElementById('pass');
+            var xhr = new XMLHttpRequest();
+            console.log(name.value);
+            xhr.open('get', "http://localhost:8080/user?act=login&user="+name.value+"&pass="+pass.value, false);//加localhost
+            xhr.onreadystatechange = function(e) { 
+                if(xhr.readyState==4){
+                    if((this.status >= 200 && this.status < 300) || this.status == 304){
+                    var json= JSON.parse(this.responseText);//转换
+                    console.log(json);
+                    if(json.ok){
+                        alert("登录成功");
+                    }else{
+                   alert('登录失败:'+json.msg);
+                  }
+                }else{
+                    alert("通信错误！");
+                }
+            };
+        }
+            xhr.send(null);
+        }
+        subBnt.onclick = function(){
+            login();
+        }
+    </script>
+</body>
+</html>
