@@ -42,7 +42,7 @@ for(var i=0;i<numBtns.length;i++){
             numNum++;
             if (inputBox.scrollWidth > front.clientWidth) {
                 inputBox.scrollTo(inputBox.scrollWidth,0);
-                console.log(12235678);
+                
             }
             flag=0;
         }  
@@ -95,6 +95,7 @@ var spans = inputBox.getElementsByTagName("span");
 var total = document.getElementById("total");
 var expression="";
 total.onclick=function(){
+    numNum=0;
     expression = inputBox.innerText;
     while(inputBox.hasChildNodes())//当inputBox下还存在子节点时 循环继续
     {
@@ -103,16 +104,18 @@ total.onclick=function(){
     let value;
     value = eval(expression);
     var p = Math.floor(Math.log(value)/Math.LN10);
-    var n = value * Math.pow(10, -p);
+    var n = new Array(50);
+    n = ""+value * Math.pow(10, -p)+"";
+    n=n.slice(0,8);//科学计数法保留8位
     if(p>=8){
         value = n + 'e' + p;
     }
     var inputc=document.createElement("span");
     inputc.innerHTML = value;
     inputBox.appendChild(inputc);
-    while (inputBox.scrollWidth > front.clientWidth) {
+    if (inputBox.scrollWidth > front.clientWidth) {
         let num=1;
-        inputBox.style.fontSize =  1-0.1*num;    
+        inputBox.style.fontSize =  1-0.1*num+'rem';    
         num++;   
     }
 }
