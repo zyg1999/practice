@@ -126,7 +126,7 @@ function getmid() {
         n = 1;
     }
     for (var i = n; i < len; i++) {
-        if (expression[i] <= '9' && expression[i] >= '0' && expression[i + 1] != '.') {//&&(expression[i+1]<'0'||expression[i+1]>'9')
+        if((expression[i]<='9'&&expression[i]>='0'&&(expression[i+1]<'0'||expression[i+1]>'9')&&expression[i+1]!='.')||i==len-1) {
             end[endCount] = expression[i];
             endCount++;
             end[endCount] = ' ';
@@ -154,12 +154,10 @@ function getmid() {
         else if (expression[i] == ')') {
             while (1) {
                 if (astr[astr.length - 1] == '(') {
-                    if (astr.length != 0)
                         astr.pop();
                     break;
                 } else {
                     end[endCount] = astr[astr.length - 1];
-                    if (astr.length != 0)
                         astr.pop();
                     endCount++;
                     end[endCount] = ' ';
@@ -233,13 +231,13 @@ total.onclick = function () {
     }
   
     var value = getrResult();
-    /* var p = Math.floor(Math.log(value) / Math.LN10);
-    var n = new Array(50);
+    var p = Math.floor(Math.log(value) / Math.LN10);
+    var n = new Array(20);
     n = "" + value * Math.pow(10, -p) + "";
     n = n.slice(0, 8);//科学计数法保留8位
     if (p >= 8) {
         value = n + 'e' + p;
-    } */
+    } 
     var inputc = document.createElement("span");
     inputc.innerHTML = value;
     inputBox.appendChild(inputc);
