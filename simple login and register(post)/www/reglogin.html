@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="return false">
+        用户名:
+        <input type="text" id="username" name="username"><br>
+        密 码:
+        <input type="text" id="pswd" name="pswd"><br>
+        <input type="button" value="注册" id="regbnt">
+
+        <input type="button" value="登录" id="loginbnt">
+    </form>
+</body>
+<script src="Ajax.js"></script>
+<script>
+    let regBnt = document.getElementById('regbnt');
+    let subBnt = document.getElementById('loginbnt');
+    
+    regBnt.addEventListener('click',function(){
+        let username = document.getElementById('username').value;
+        let pswd = document.getElementById('pswd').value;
+
+        Ajax({
+            url:"http://localhost:8080/register",
+            type:"POST",
+            data:{"username":username,"password":pswd},
+            async:true,
+            success:function successfn(response){
+                alert(JSON.parse(response).msg); 
+            },
+            fail:function error(){
+                console.log("通信失败");
+            }
+        });
+
+    });
+
+    subBnt.addEventListener('click',function(){
+        let username = document.getElementById('username').value;
+        let pswd = document.getElementById('pswd').value;
+
+        Ajax({
+            url:"http://localhost:8080/login",
+            type:"POST",
+            data:{"username":username,"password":pswd},
+            async:true,
+            success:function successfn(response){
+                alert(JSON.parse(response).msg); 
+            },
+            fail:function error(){
+                console.log("通信失败");
+            }
+        })
+    });
+</script>
+
+</html>
