@@ -9,7 +9,6 @@ let server = http.createServer(function (req, res) {
     res.setHeader("Access-Control-Allow-Origin","*");
     console.log(req.method);
     if(req.method == "POST"){
-      /*   console.log(patheName); */
         var result = "";//接收用户名和密码
         var patheName = req.url;//保存前端发来路由地址
 
@@ -82,7 +81,6 @@ let server = http.createServer(function (req, res) {
                         }
                         if(patheName == "/register"){
                             let obj = {};
-                            console.log(11111);
                             obj.username = user.username;
                             obj.password = user.password;
                             arr.push(obj);
@@ -101,56 +99,6 @@ let server = http.createServer(function (req, res) {
     }else if(req.method == "GET"){
         console.log("GET");
     }
-    
-    
-   
-
-    
-
-/*     req.on('end', function () {
-        if (req.method == "POST") {
-            message = querystring.parse(str);
-        }  
-        if (url == '/register') {
-            if (message.type == "reg") {
-                if (obj[message.name]) {
-                    res.write('{"ok":false,"msg":"用户已存在"}');
-                    res.end();
-                } else {
-                    obj[message.name] = message.pass;
-                    res.write('{"ok": true,"msg":"注册成功"}');
-                    res.end();
-                }
-            } else if (message.type == "login") {
-                if (obj[message.name]) {
-                    if (obj[message.name] == message.pass) {
-                        res.write('{"ok":true,"msg":"登录成功"}');
-                        res.end();
-                    } else {
-                        res.write('{"ok":false,"msg":"用户名或密码有误"}');
-                        res.end();
-                    }               
-                } else {
-                res.write('{"ok": false,"msg":"此用户不存在"}');
-                    res.end();
-                }
-            }
-      } else {
-           var filename = "./www" + req.url;
-            fs.readFile(filename, function (err,data) {
-                if (err) {
-                    console.log(err);
-                    res.write("404");
-                } else {
-                    res.setHeader("Content-type", "text/html");
-                    res.write(data);
-                }
-                res.end();
-            });
-
-        }
-
-    }) */
 
 });
 
